@@ -1,3 +1,3 @@
 # parvejkhan-demo
-This is my first Git Repository
-Author - parvej kyamkhani
+This is my first Git Repository.
+ Author - parvej kyamkhani
