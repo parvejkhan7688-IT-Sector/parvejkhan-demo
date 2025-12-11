@@ -172,6 +172,7 @@ color: #dbdada;
     font-size: 22px;
     margin-right: 20px;
 }
+   
 
 .top-nav .login-btn .sign-up{
    color: #838181;
@@ -189,9 +190,10 @@ color: #dbdada;
    background: #fff;
    padding: 10px 20px;
    border-radius: 20px;
+   cursor: pointer;
 }
 .top-nav .login-btn .login:hover{
-   background: #1db954;
+    background-color: #1db954;
 }
 
 .spotify-playlist{
@@ -244,16 +246,32 @@ color: #dbdada;
 .spotify-playlist .play-btn{
     position: relative;
 }
-.spotify-playlist .play-btn i{
+/* .spotify-playlist .play-btn i{
     position: absolute;
     background: #1db954;
-    border-radius: 55%;
+    border-radius: 70%;
     padding: 5px;
     right: 8px;
     top: -24px;
-   opacity: 0;
+    opacity: 0;
    transform: 0.3s ease all;
+} */
+ .spotify-playlist .play-btn i {
+    position: absolute;
+    background: #1db954;
+    border-radius: 50%;  /* perfect circle */
+    padding: 7px;
+    padding-right: 6px;
+    width: 30px;
+    height: 30px;
+/* border-radius: 50%; */
+
+    right: 8px;
+    top: -30px;
+    opacity: 0;
+    transition: all 0.3s ease;
 }
+
 .spotify-playlist .Card .item:hover .play-btn i{
     opacity: 1;
     transform: translateY(-20px);
@@ -298,13 +316,19 @@ color: #dbdada;
 }
 
 .footer .social-links i{
-    color: #b3b3b3;
+    color: white;
+    background-color: #272626;
     cursor: pointer;
-    margin: 0 6px;
+     border-radius: 50%;  
+    padding: 7px;
+    padding-right: 6px;
+    width: 30px;
+    height: 30px;
+   
 }
 
 .footer .social-links i:hover{
-    color: white;
+    color: #3d3c3c;
 }
 
 hr{
@@ -354,5 +378,6 @@ hr{
 }
 .preview button:hover{
     padding: 11px 25px;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
+     background: linear-gradient(to right, #ae2896, #509bf5);
 }
